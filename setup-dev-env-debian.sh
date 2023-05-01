@@ -10,7 +10,8 @@ sudo apt-get install -y \
 	gnupg \
 	fzf \
 	chafa \
-	imagemagick
+	imagemagick \
+	ripgrep
 
 has_nvim="$(which nvim)"
 if [[ "$has_nvim" = "" ]]; then

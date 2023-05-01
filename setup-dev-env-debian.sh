@@ -2,7 +2,15 @@
 
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y curl jq git ca-certificates gnupg fzf
+sudo apt-get install -y \
+	curl \
+	jq \
+	git \
+	ca-certificates \
+	gnupg \
+	fzf \
+	chafa \
+	imagemagick
 
 has_nvim="$(which nvim)"
 if [[ "$has_nvim" = "" ]]; then

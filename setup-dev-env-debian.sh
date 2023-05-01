@@ -35,15 +35,18 @@ if [[ ! -d $NVM_DIR ]]; then
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 	nvm install 18
-	npm install -g typescript \
-		typescript-language-server \
-		bash-language-server \
-		vscode-langservers-extracted \
-		@tailwindcss/language-server \
-		yaml-language-server \
-		yarn \
-		prettier
 fi
+
+npm install -g typescript \
+	typescript-language-server \
+	bash-language-server \
+	vscode-langservers-extracted \
+	@tailwindcss/language-server \
+	yaml-language-server \
+	yarn \
+	prettier \
+	lua-fmt \
+	nginxbeautifier
 
 has_tmux="$(which tmux)"
 if [[ "$has_tmux" = "" ]]; then
